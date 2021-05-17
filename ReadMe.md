@@ -27,7 +27,7 @@ Note: Execution/Runtime Environment (in IDE) should point to JRE corresponding t
 Page object model
 
 ## Setup
-If maven is setup on your machine, all you have to do is clone this project in your machine and import this as maven project in your IDE
+If maven is setup on the machine, all you have to do is clone this project in your machine and import this as maven project in your IDE
 
 
 ## How to run the tests
@@ -47,6 +47,6 @@ Note: Once the test(s) is/are executed, browser session is not closed intentiona
 
 
 ## Considerations
-1) On smaller screens i.e. laptops, `next to go events` section is not displayed. For the time being, this issue is dealt by zooming out once programatically. Usually on bigger screens, this may not be a problem. Reducing browser size is not a sustainable solution as tests should run at the default zoom i.e. 100% else, there can be unexpected results sometimes.
+1) On smaller screens i.e. laptops, `next to go events` section is not displayed. User has to zoom out for viewin this section. For the time being, this issue is dealt by zooming out once programatically. Usually on bigger screens, this may not be a problem.
 
-2)To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that is a decision made with consent.
+2) To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that should a decision made with consent and is a point to consider while setting up the framework
