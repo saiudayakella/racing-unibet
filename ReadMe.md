@@ -4,14 +4,16 @@ This project tests the flow of selecting a lowest fixed price from the selected 
 ## Pre-requisites
 1) Java  - Recommend using any of the versions above 9.
 
-2) Maven - used for managing all the dependencies of this project. 
-   For steps to setup maven on your machine, refer:
+2) Maven - used for managing all the dependencies of this project.
+    * Download maven @ https://maven.apache.org/download.cgi
+    * To setup maven, refer:
         - https://mkyong.com/maven/how-to-install-maven-in-windows/
+
         - https://www.baeldung.com/install-maven-on-windows-linux-mac
         
 3) IDE - Recommend installing Eclipse IDE for simplicity purposes. Any other compatible IDEs can be used as well Eg: IntelliJ, Visual Studio code
 
-Note: Used JDK 14 and Eclipse IDE for setting up this project.
+Note: Used JDK 14, Maven 3.5.2 and Eclipse IDE for setting up this project.
 
 ## Project dependencies
 * Framework: TestNG
