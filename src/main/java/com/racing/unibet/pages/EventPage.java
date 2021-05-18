@@ -51,7 +51,10 @@ public class EventPage extends BasePage {
 
 		return fixedPricesElements.get(indexOfLowestFixedPrice);
 	}
-
+	
+	/**
+	 * Select lowest fixed price(PLACE/WIN) in the runners table
+	 */
 	public void selectLowestFixedPrice() {
 		WebElement lowestFixedPriceElement = getLowestFixedPrice();
 
@@ -114,6 +117,10 @@ public class EventPage extends BasePage {
 		private By priceTypeOnBetSlip = By.xpath("//span[contains(@data-test-id, 'bet-odds-price-type')]");
 		private By runnerDetailsOnBetSlip = By.xpath("//div[@data-test-id='bet-history-runner']");
 		
+		/**
+		 * 
+		 * @return event name on th betslip
+		 */
 		public String getEventNameOnBetSlip() {
 			WebElement eventNameElement = driver.findElement(eventNameOnBetSlip);
 			return eventNameElement.getText();			
@@ -121,7 +128,7 @@ public class EventPage extends BasePage {
 		
 		/**
 		 * 
-		 * @return event type details i.e. event number and name on the betslip
+		 * @return selected event type details i.e. event number and name on the betslip
 		 */
 		public WebElement getEventTypeOnBetSlip() {
 			WebElement eventTypeElement = driver.findElement(eventTypeOnBetSlip);
@@ -130,7 +137,7 @@ public class EventPage extends BasePage {
 		
 		/**
 		 * 
-		 * @return event type details i.e. svg data on the betslip
+		 * @return selected event type details i.e. svg data on the betslip
 		 */
 		public String getEventTypePath() {
 			return getEventTypeOnBetSlip().findElement(
@@ -139,7 +146,7 @@ public class EventPage extends BasePage {
 		
 		/**
 		 * 
-		 * @return runner details on the bet slip
+		 * @return respective runner details on the bet slip
 		 */
 		public String getRunnerDetailsOnBetSlip() {
 			WebElement runnerDetailsElement = driver.findElement(runnerDetailsOnBetSlip);
@@ -148,7 +155,7 @@ public class EventPage extends BasePage {
 		
 		/**
 		 * 
-		 * @return price on the bet slip
+		 * @return selected price on the bet slip
 		 */
 		public String getPriceOnBetSlip() {
 			WebElement priceElement = driver.findElement(priceOnBetSlip);
@@ -157,7 +164,7 @@ public class EventPage extends BasePage {
 		
 		/**
 		 * 
-		 * @return price type on the bet slip
+		 * @return selected price type on the bet slip
 		 */
 		public String getPriceTypeOnBetSlip() {
 			WebElement priceTypeElement = driver.findElement(priceTypeOnBetSlip);

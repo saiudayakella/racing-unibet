@@ -51,5 +51,6 @@ Note: Once the test(s) is/are executed, browser session is not closed intentiona
 ## Considerations
 1) On smaller screens i.e. laptops, `next to go events` section is not displayed. User has to zoom out for viewin this section. For the time being, this issue is dealt by zooming out once programatically. Usually on bigger screens, this may not be a problem.
 
-2) To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that is a decision made with consent.
 2) To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that should a decision made with consent and is a point to consider while setting up the framework
+
+3) Functions in the pages (i.e. EventPage, LobbyPage) can be made generic enough to retrieve/select any kind of price and position. With limited knowledge on application, currently those functions target fixed price flow.
