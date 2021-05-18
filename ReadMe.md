@@ -49,4 +49,4 @@ Note: Once the test(s) is/are executed, browser session is not closed intentiona
 ## Considerations
 1) On smaller screens i.e. laptops, `next to go events` section is not displayed. For the time being, this issue is dealt by zooming out once programatically. Usually on bigger screens, this may not be a problem. Reducing browser size is not a sustainable solution as tests should run at the default zoom i.e. 100% else, there can be unexpected results sometimes.
 
-2)To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that is a decision made with consent.
+2) To get similar results across the browsers, specific resolution will have to be set manually (or) programatically. This is not dealt in the project as that is a decision made with consent.
